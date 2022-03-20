@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  background: #65adff;
+  background: #fec618;
   text-align: center;
   font-family: 'Bitter', serif;
   font-size: 18px;
@@ -30,11 +30,12 @@ h1 {
 }
 
 a {
-  color: #222;
+  color: #604800;
   font-weight: 400;
   text-decoration: none;
   letter-spacing: .6px;
   cursor: pointer;
+  border-bottom: 1px solid rgba(96,72,0,.8);
 }
 
 .aligner {
@@ -55,11 +56,6 @@ a {
   min-width: 64px;
   width: 50%;
   margin-bottom: 2rem;
-}
-.aligner-item img.logo {
-  width: 50%;
-  min-width: 356px;
-  min-width: 256px;
 }
 
 .aligner-item ul.socials {
@@ -91,7 +87,7 @@ a.button {
   border-radius: 17px;
   box-shadow: 5px 8px 0 #050504;
   box-sizing: border-box;
-  background: #65adff;
+  background: #fec618;
   color: #050504;
   font-size: 36px;
   font-family: 'Gumbo-DEMO-Regular';
@@ -107,11 +103,11 @@ a.button:hover{
   transform: translate(2px,4px);
 }
 a.button.main {
-  background: url('/images/rays-2.png') 10% top/contain no-repeat,url('/images/rays-3.png') 30% top/contain no-repeat,#c7e1ff;
+  background: url('/images/rays-2.png') 10% top/contain no-repeat,url('/images/rays-3.png') 30% top/contain no-repeat,#ffdb6f;
   padding: 10px 100px;
 }
 a.button.main:hover {
-  background: url('/images/rays-2.png') 81% top/contain no-repeat,url('/images/rays-3.png') 95% top/contain no-repeat,#65adff;
+  background: url('/images/rays-2.png') 81% top/contain no-repeat,url('/images/rays-3.png') 95% top/contain no-repeat,#fec618;
 }
 a.button.main.small {
   font-size: 1.3rem;
@@ -119,4 +115,24 @@ a.button.main.small {
 }
 a.button.main.small i.fa-arrow-right {
   margin-left: 7px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .aligner {
+    display: block;
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  .aligner-item {
+    margin: 0 auto;
+  }
 }
