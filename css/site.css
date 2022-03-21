@@ -10,7 +10,8 @@ body {
 }
 
 body {
-  background: #fec618;
+  background: #fec618 url('/images/teasing-right.png') no-repeat right bottom;
+  background-size: 40%;
   text-align: center;
   font-family: 'Bitter', serif;
   font-size: 18px;
@@ -24,7 +25,6 @@ h1 {
   font-weight: 400;
   line-height: 1.09;
   max-width: 100%;
-  text-align: center;
   text-shadow: 4px 5px 0 rgba(255,255,255,0.6);
   margin: 0 auto;
 }
@@ -38,17 +38,22 @@ a {
   border-bottom: 1px solid rgba(96,72,0,.8);
 }
 
+p {
+  line-height: 1.4;
+}
+
 .aligner {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100vh;
+  padding-left: 10%;
 }
 
 .aligner-item {
-  width: 90%;
+  width: 55%;
   max-width: 1200px;
-  text-align: center;
+  text-align: left;
 }
 
 .aligner-item img.icon {
@@ -134,5 +139,6 @@ a.button.main.small i.fa-arrow-right {
 
   .aligner-item {
     margin: 0 auto;
+    text-align: center;
   }
 }
